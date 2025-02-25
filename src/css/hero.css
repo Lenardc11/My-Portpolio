@@ -1,92 +1,47 @@
-/* Resetting all default margin, padding, and box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Ensures body and html take full screen width and height */
 html, body {
-    height: 100%; /* Full height */
-    width: 100%; /* Full width */
+    height: 100%;
+    width: 100%;
     font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a; /* Dark background */
-    color: #e4e4e4; /* Light text color */
-    overflow-x: hidden; /* Prevent horizontal scroll */
-    margin: 0; /* Reset any default margin */
-    padding: 0; /* Reset any default padding */
-}
-
-/* Hero Section Styling */
-.hero-container {
-    position: relative;
-    width: 100vw; /* Full viewport width */
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    text-align: center; /* Ensures the text is centered horizontally */
-    overflow: hidden; /* Prevent overflow */
-    animation: fadeInBackground 3s ease-in-out; /* Animation for background */
-    margin-top: 19%; /* Remove any default margin */
-}
-
-/* Hero Title Styling */
-.hero-title {
-    font-size: 5rem; /* Increase font size */
-    font-weight: bold;
+    background-color: #1a1a1a;
+    color: #e4e4e4;
+    overflow-x: hidden;
     margin: 0;
-    padding: 0; /* Ensure no padding */
-    color: white; /* White text color */
-}
-
-/* Hero Description Styling */
-.hero-description {
-    font-size: 2rem; /* Increase font size for description */
-    margin-top: 1rem;
-    color: #ccc; /* Light gray text for description */
-}
-
-/* About Section Styling */
-.about-section {
-    padding: 5rem 2rem;
-    background-color: #121212; /* Same dark background */
-    color: white; /* White text for contrast */
-    text-align: left; /* Align text to left for consistency */
-    animation: fadeInText 2s ease-in-out; /* Fade-in animation for the text */
-    width: 100vw; /* Ensure full width */
-    box-sizing: border-box; /* Include padding and border in the width */
-    margin: 0; /* Remove any default margin */
-}
-
-/* About Section Heading Styling */
-.about-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-/* About Section Paragraph Styling */
-.about-section p {
-    font-size: 1.2rem;
-    max-width: 100%; /* Allow full width */
-    margin: 0 auto;
-    line-height: 1.6;
-    color: #bbb; /* Lighter text for paragraphs */
-}
-
-/* About Section List Styling */
-.about-section ul {
-    color: #bbb;
-    list-style-type: none;
     padding: 0;
 }
 
-.about-section ul li {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
+.hero-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    animation: fadeInBackground 3s ease-in-out;
+    margin-top: 100%;
 }
 
-/* Optional: If you want smooth scrolling between sections */
+.hero-title {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.hero-description {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: #ccc;
+}
+
 html {
     scroll-behavior: smooth;
 }
