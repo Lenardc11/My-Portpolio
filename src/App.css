@@ -1,42 +1,45 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a1a;
+  color: #e4e4e4;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+html::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
 }
 
-.card {
-  padding: 2em;
+html::-webkit-scrollbar-track {
+  background: transparent; /* Transparent track */
+  border-radius: 10px; /* Rounded edges */
 }
 
-.read-the-docs {
-  color: #888;
+html::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #3A29FF, #c92828); /* Gradient matching Aurora colors */
+  border-radius: 10px; /* Rounded thumb */
+  border: 2px solid #2a2a2a00; /* Border to blend with page background */
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #c92828, #FF3232); /* Hover effect with Aurora colors */
+}
+
+/* Custom Scrollbar for Firefox */
+html {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #c92828 transparent; /* Thumb color, transparent track */
 }
