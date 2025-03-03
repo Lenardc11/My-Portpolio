@@ -1,0 +1,35 @@
+.parallax {
+    position: absolute; /* Position on left side of Hero */
+    left: 0; /* Align to left edge */
+    bottom: 5%; /* Place at bottom instead of top: 95% */
+    width: 100vw; /* Full viewport width */
+    overflow: visible; /* Allow content to extend beyond parent */
+    z-index: 10; /* Above background */
+    opacity: 0.2; /* Subtle effect */
+    transform: none; /* Remove vertical centering since we’re at bottom */
+}
+
+.scroller {
+    display: flex;
+    white-space: nowrap;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2.25rem;
+    font-weight: bold;
+    letter-spacing: -0.02em;
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
+    color: #ffffff; /* Ensure visibility */
+    text-shadow: 0 0 8px rgb(255, 255, 255); /* Match description shadow */
+    width: max-content; /* Allow scroller to extend naturally */
+}
+
+.scroller span {
+    flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+    .scroller {
+        font-size: 7rem;
+        line-height: 5rem;
+    }
+}
