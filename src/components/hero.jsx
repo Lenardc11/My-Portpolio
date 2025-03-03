@@ -4,6 +4,7 @@ import Aurora from '../js/aurora';
 import ScrollVelocity from '../js/ScrollVelocity';
 import '../css/hero.css';
 import '../js/ScrollVelocity.css';
+import meImage from '../assets/me.png';
 
 // Hero Component
 const Hero = () => {
@@ -54,7 +55,7 @@ const Hero = () => {
           className="custom-scroll-text"
         />
         <div className="hero-image-container">
-          <img src="src/assets/me.png" alt="Lenard Chavez" className="hero-image" />
+        <img src={meImage} alt="Lenard Chavez" className="hero-image" />
         </div>
       </div>
     </motion.section>
