@@ -1,0 +1,423 @@
+/* Contact Section Styles */
+.contact-section {
+  padding: 2rem;
+  background-color: rgb(9, 11, 17);
+  color: white;
+  width: 100%;
+  min-height: auto; /* Changed from 100vh to auto */
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contact Section Title */
+.contact-section h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
+  text-align: left;
+  padding-left: 2rem;
+  margin-top: 5%;
+  position: relative;
+}
+
+/* Underline for Contact Title */
+.contact-section h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #c92828;
+  margin: 0.5rem 0;
+  border-radius: 2px;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Hover Effect for Title Underline */
+.contact-section h2:hover::after {
+  width: 260px;
+}
+
+/* Contact Content Layout */
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Contact Message Section */
+.contact-message {
+  background: rgba(26, 26, 26, 0.5);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.message-icon-container {
+  width: 80px;
+  height: 80px;
+  background: rgba(201, 40, 40, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  border: 2px dashed rgba(201, 40, 40, 0.5);
+}
+
+.message-icon {
+  color: #c92828;
+}
+
+.contact-message h3 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.contact-message p {
+  color: #bbb;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.collaboration-text {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.collaboration-text span {
+  color: #ffffff;
+  font-weight: 500;
+  border-bottom: 2px solid #c92828;
+  padding-bottom: 3px;
+}
+
+/* Contact Links Container */
+.contact-links-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* Individual Contact Item */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem;
+  background: rgba(26, 26, 26, 0.3);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.contact-item:hover {
+  background: rgba(26, 26, 26, 0.5);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Icon Container */
+.contact-icon-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Contact Details */
+.contact-details {
+  flex: 1;
+}
+
+.contact-details h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: #ffffff;
+}
+
+.contact-details p {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* External Link Icon */
+.external-link-icon {
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Thank You Message */
+.thank-you-message {
+  text-align: center;
+  margin-top: 2rem; /* Reduced from 4rem to 2rem */
+  padding: 1.5rem; /* Reduced from 2rem to 1.5rem */
+  margin-bottom: 2rem; /* Added margin-bottom for spacing */
+}
+
+.thank-you-message p {
+  font-size: 1.2rem;
+  color: #bbb;
+  line-height: 1.8;
+}
+
+.signature {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  color: #ffffff;
+  font-size: 1.3rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+/* Animation for icons on hover */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.contact-item:hover .contact-icon {
+  animation: pulse 1s infinite;
+}
+
+/* Responsive Design */
+@media (min-width: 992px) {
+  .contact-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .contact-message {
+    flex: 1;
+    max-width: 40%;
+  }
+
+  .contact-links-container {
+    flex: 1.5;
+  }
+
+  /* Adjust height to match projects section */
+  .contact-section {
+    padding-bottom: 4rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact-section h2 {
+    font-size: 2.8rem;
+  }
+
+  .contact-links-container {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-section h2 {
+    font-size: 2.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .contact-content {
+    padding: 0 1.5rem;
+    gap: 2rem;
+  }
+
+  .contact-message h3 {
+    font-size: 1.8rem;
+  }
+
+  .contact-message p {
+    font-size: 1rem;
+  }
+
+  .collaboration-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section h2 {
+    font-size: 2.2rem;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-content {
+    padding: 0 1rem;
+  }
+
+  .contact-message {
+    padding: 1.5rem;
+  }
+
+  .message-icon-container {
+    width: 70px;
+    height: 70px;
+  }
+
+  .contact-links-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-item {
+    padding: 1rem;
+  }
+
+  .thank-you-message {
+    margin-top: 2rem;
+    padding: 1.5rem;
+  }
+
+  .thank-you-message p {
+    font-size: 1.1rem;
+  }
+
+  .signature {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .contact-section h2 {
+    font-size: 2rem;
+    padding-left: 0.5rem;
+  }
+
+  .contact-section h2:hover::after {
+    width: 200px;
+  }
+
+  .contact-content {
+    padding: 0 0.5rem;
+    gap: 1.5rem;
+  }
+
+  .contact-message h3 {
+    font-size: 1.6rem;
+  }
+
+  .message-icon-container {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+  }
+
+  .contact-item {
+    padding: 0.8rem;
+  }
+
+  .contact-icon-container {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-details h4 {
+    font-size: 1rem;
+  }
+
+  .contact-details p {
+    font-size: 0.8rem;
+  }
+
+  .thank-you-message {
+    margin-top: 1.5rem;
+    padding: 1rem;
+  }
+
+  .thank-you-message p {
+    font-size: 1rem;
+  }
+
+  .signature {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-message h3 {
+    font-size: 1.4rem;
+  }
+
+  .contact-message p {
+    font-size: 0.9rem;
+  }
+
+  .collaboration-text {
+    font-size: 1rem;
+  }
+}
+
+/* Landscape mode on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .contact-section {
+    padding: 1rem;
+  }
+
+  .contact-section h2 {
+    font-size: 2rem;
+    margin-top: 2%;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-content {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .contact-message {
+    flex: 1;
+  }
+
+  .contact-links-container {
+    flex: 1;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .message-icon-container {
+    width: 50px;
+    height: 50px;
+  }
+
+  .thank-you-message {
+    margin-top: 1.5rem;
+  }
+}
