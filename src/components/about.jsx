@@ -53,7 +53,7 @@ const About = () => {
             Outside of coding, you'll find me on the basketball court, either playing in competitions or training to
             improve my game. Basketball has taught me teamwork, discipline, and perseverance—qualities I apply to both
             my studies and my career. I also enjoy gaming, traveling, and riding motorcycles. You can also find me in
-            our barangay as I am currently an elected K member of our community.
+            our barangay as I am currently an elected SK member of our community.
           </p>
         </div>
       </motion.section>

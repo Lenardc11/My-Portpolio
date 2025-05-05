@@ -61,7 +61,7 @@ const Navbar = () => {
             <a href="#contact">Contact</a>
           </li>
           <li>
-            <a href="#">Blog</a>
+            <a href="https://chavezblog.netlify.app/">Blog</a>
           </li>
         </ul>
       </div>
